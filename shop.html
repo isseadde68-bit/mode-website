@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="so">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SIYAD SHOP - Dukaan Casri ah</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box;font-family:sans-serif;}
+body{background:#f5f5f5;line-height:1.6}
+
+/* NAVBAR */
+header{background:#111;
+    color:white;padding:15px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+nav{display:flex;justify-content:space-between;align-items:center;width:90%;margin:auto}
+nav ul{display:flex;list-style:none}
+nav li{margin-left:20px}
+nav a{color:white;text-decoration:none;transition:.3s}
+nav a:hover{color:#00bcd4}
+
+/* HERO */
+.hero{
+height:90vh;
+background:linear-gradient(rgba(0,0,0,.6),rgba(0,0,0,.6)),
+url("https://images.unsplash.com/photo-1512436991641-6745cdb1723f?auto=format&fit=crop&w=1500&q=80") center/cover no-repeat;
+display:flex;justify-content:center;align-items:center;color:white;text-align:center
+}
+.hero h1{font-size:3rem;margin-bottom:15px}
+.hero button{padding:12px 25px;border:none;background:#00bcd4;color:white;cursor:pointer;transition:.3s}
+.hero button:hover{transform:scale(1.1);background:#0097a7}
+
+/* SECTION */
+section{padding:60px 20px;text-align:center}
+
+/* FLEX & GRID */
+.flex{display:flex;flex-wrap:wrap;gap:20px;justify-content:center}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:20px}
+
+/* CARDS */
+.card{background:white;border-radius:10px;padding:15px;transition:.4s;overflow:hidden}
+.card img{width:100%;height:200px;object-fit:cover;border-radius:10px;display:block}
+.card:hover{transform:translateY(-10px) scale(1.03);box-shadow:0 10px 20px rgba(0,0,0,.2)}
+.btn{display:inline-block;padding:10px 20px;border:none;background:#111;color:white;margin-top:10px;cursor:pointer;text-decoration:none;transition:.3s;border-radius:5px;text-align:center}
+.btn:hover{background:#00bcd4}
+
+/* BOX */
+.box{padding:20px;background:#eee;border-radius:10px;transition:.3s;min-width:150px;text-align:center}
+.box:hover{background:#00bcd4;color:white;transform:scale(1.1)}
+
+/* INPUTS */
+input,textarea{width:100%;padding:10px;margin:10px 0;border:1px solid #ccc;border-radius:5px}
+
+/* FOOTER */
+footer{background:#111;color:white;padding:20px;text-align:center}
+
+/* RESPONSIVE */
+@media(max-width:768px){
+.hero h1{font-size:2rem}
+.grid{grid-template-columns:1fr}
+.flex{display:block}
+.flex .box{margin-bottom:15px}
+}
+</style>
+</head>
+<body>
+
+<header>
+<nav>
+<h2>SIYAD SHOP</h2>
+<ul>
+<li><a href="#">Home</a></li>
+<li><a href="#Dharka">Dharka</a></li>
+<li><a href="#Kabaha">Kabaha</a></li>
+<li><a href="#Electronics">Electronics</a></li>
+<li><a href="#Contact">Contact</a></li>
+</ul>
+</nav>
+</header>
+
+<!-- 1 HERO -->
+<section class="hero">
+<div>
+<h1>Ku soo dhowow SIYAD SHOP</h1>
+<p>Qiimo jaban & tayo sare</p>
+<button>Hadda Iibso</button>
+</div>
+</section>
+
+<!-- 2 Dharka -->
+<section id="Dharka">
+<h2>Dharka</h2>
+<div class="grid">
+<div class="card">
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT8uCa4-Wc5LGwHsEexcOhs7EdAO2VRp6IxXQ&s" alt="Shirt">
+<h3>Shirt Casri ah</h3>
+<p>$25</p>
+<a href="https://example.com/shirt" class="btn">Iibso</a>
+</div>
+<div class="card">
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRVk0mw0-5ZA4YirWU0ZGkIthydNF4Mi9zpvg&s" alt="Jeans">
+<h3>Jeans</h3>
+<p>$40</p>
+<a href="https://example.com/jeans" class="btn">Iibso</a>
+</div>
+<div class="card">
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ0cC8AXZryoveFEdfgyM27yPsvYpdFRUxaLA&s" alt="Jacket">
+<h3>Jacket</h3>
+<p>$60</p>
+<a href="https://example.com/jacket" class="btn">Iibso</a>
+</div>
+</div>
+</section>
+
+<!-- 3 Kabaha -->
+<section id="Kabaha">
+<h2>Kabaha</h2>
+<div class="grid">
+<div class="card">
+<img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&w=500&q=80" alt="Kabo Sport">
+<h3>Kabo Sport</h3>
+<p>$35</p>
+<a href="https://example.com/kabosport" class="btn">Iibso</a>
+</div>
+<div class="card">
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTiksuYHoqnfvBXgRkLg6uM4VnitfCnzTRaSA&s" alt="Kabo Casri ah">
+<h3>Kabo Casri ah</h3>
+<p>$30</p>
+<a href="https://example.com/kabocasri" class="btn">Iibso</a>
+</div>
+</div>
+</section>
+
+<!-- 4 Electronics -->
+<section id="Electronics">
+<h2>Electronics</h2>
+<div class="grid">
+<div class="card">
+<img src="https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?auto=format&fit=crop&w=500&q=80" alt="Smartphone">
+<h3>Smartphone</h3>
+<p>$200</p>
+<a href="https://example.com/smartphone" class="btn">Iibso</a>
+</div>
+<div class="card">
+<img src="https://images.unsplash.com/photo-1526170375885-4d8ecf77b99f?auto=format&fit=crop&w=500&q=80" alt="Camera">
+<h3>Camera</h3>
+<p>$220</p>
+<a href="https://example.com/camera" class="btn">Iibso</a>
+</div>
+<div class="card">
+<img src="https://images.unsplash.com/photo-1514996937319-344454492b37?auto=format&fit=crop&w=500&q=80" alt="Laptop">
+<h3>Laptop</h3>
+<p>$350</p>
+<a href="https://example.com/laptop" class="btn">Iibso</a>
+</div>
+</div>
+</section>
+
+<!-- 5 Dalabyo Gaar ah -->
+<section>
+<h2>Dalabyo Gaar ah</h2>
+<p>Hel qiimo dhimis ilaa 50%</p>
+</section>
+
+<!-- 6 Ugu Iibinta Badan -->
+<section>
+<h2>Ugu Iibinta Badan</h2>
+<div class="grid">
+<div class="card">
+<img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&w=500&q=80" alt="Kabo Sport">
+<h3>Kabo Sport</h3>
+</div>
+<div class="card">
+<img src="https://images.unsplash.com/photo-1526170375885-4d8ecf77b99f?auto=format&fit=crop&w=500&q=80" alt="Camera">
+<h3>Camera</h3>
+</div>
+</div>
+</section>
+
+<!-- 7 Sababta noo doorato -->
+<section>
+<h2>Sababta noo doorato</h2>
+<div class="flex">
+<div class="box">Gaarsiin Degdeg</div>
+<div class="box">Tayo Sare</div>
+<div class="box">Lacag Ammaan ah</div>
+</div>
+</section>
+
+<!-- 8 Faallooyinka -->
+<section>
+<h2>Faallooyinka Macaamiisha</h2>
+<p>"Dukaan aad u fiican!"</p>
+</section>
+
+<!-- 9 Blog -->
+<section>
+<h2>Blog</h2>
+<p>Talooyin iyo warar cusub</p>
+</section>
+
+<!-- 10 Testimonials -->
+<section>
+<h2>Macaamiil Faraxsan</h2>
+<p>"Qiimo wanaagsan & gaarsiin degdeg!"</p>
+</section>
+
+<!-- 11 FAQ -->
+<section>
+<h2>Su’aalaha Badan La Isweydiiyo</h2>
+<p>Sideen u dalban karaa? Sideen u bixinaa?</p>
+</section>
+
+<!-- 12 Our Team -->
+<section>
+<h2>Kooxda</h2>
+<div class="flex">
+<div class="box">BOX 1</div>
+<div class="box">BOX 2</div>
+<div class="box">BOX 3</div>
+</div>
+</section>
+
+<!-- 13 Alaabooyinka Caanka ah -->
+<section>
+<h2>Alaabooyinka Caanka ah</h2>
+<div class="grid">
+<div class="card">
+<img src="https://images.unsplash.com/photo-1526170375885-4d8ecf77b99f?auto=format&fit=crop&w=500&q=80" alt="Kameera">
+<h3>Kameera</h3>
+</div>
+<div class="card">
+<img src="https://images.unsplash.com/photo-1514996937319-344454492b37?auto=format&fit=crop&w=500&q=80" alt="Computer Casri ah">
+<h3>Computer Casri ah</h3>
+</div>
+</div>
+</section>
+
+<!-- 14 Nala Soo Xiriir -->
+<section id="Contact">
+<h2>Nala Soo Xiriir</h2>
+<input type="text" placeholder="Magacaaga">
+<input type="email" placeholder="Email">
+<textarea placeholder="Fariin"></textarea>
+<button class="btn">Dir</button>
+</section>
+
+<!-- Footer -->
+<footer>
+<p>© 2026 SIYAD SHOP - Xuquuqdu way dhowran tahay</p>
+</footer>
+
+</body>
+</html>
