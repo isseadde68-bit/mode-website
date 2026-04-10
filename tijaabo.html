@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+       <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            line-height: 1.6;
+            /* background-color: rgb(229, 232, 234); */
+            background: linear-gradient(90deg,blue,green);
+            color: #333;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 10px;
+            /* margin: 30px 0; */
+            /* width: 100vw;
+            height: 100vh; */
+              /* overflow: hidden; */
+              height: 100vh;
+        }
+        .postcard{
+            background-color: rgb(255, 255, 255);
+            width: 300px;
+            /* padding: 20px; */
+            margin: 30px auto;
+            border-radius: 20px;
+            box-shadow: 0 5px 7px rgba(0,0,0,0.6);
+            max-height: 530px;
+          
+        }
+        .postcard img{
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            border: 3px solid rgb(255, 2, 2);
+            margin: 10px 0;
+            /* align-items: center;
+            text-align: center; */
+            justify-content: center;
+            object-fit: cover;
+        }
+        .postcard h2{
+            font-size: 1.7rem;
+        }
+        .postcard p{
+            font-size: 0.7rem;
+            margin-bottom: 7px;
+            /* justify-content: center; */
+            /* align-items: center; */
+            text-align: center;
+        }
+        .status{
+            display: flex;
+            justify-content: space-around;
+            gap: 30px;
+        }
+        .stata h3{
+            font-size: 1.4rem;
+        color: rgb(13, 13, 110);
+        }
+        .socialmedia{
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+        }
+        .socialmedia a{
+            background-color: rgb(255, 255, 255);
+            color: rgb(134, 131, 128);
+            width: 33px;
+            height: 33px;
+            border-radius: 50%;
+            /* text-align: center;
+            justify-content: center;
+            align-items: center; */
+            align-content: center;
+            transition: 3s;
+        }
+        .socialmedia a:hover{
+         color: brown;
+        }
+       </style>
+
+</head>
+<body>
+        <div class="postcard">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQF2yaox2cALIq_yyd-9qEyovEsficJr7X9QQ&s" alt="">
+            <h2>Ahmed</h2>
+            <p>UI/UX Designer</p>
+        <div class="status">
+             <div class="stata">
+                <h3>90</h3>
+                <p>projects</p>
+             </div>
+             <div class="stata">
+                <h3>110</h3>
+                <p>following</p>
+             </div>
+             <div class="stata">
+                <h3>330</h3>
+                <p>followers</p>
+             </div>
+        </div>
+        <div class="pragarph">
+            <p>Lorem ipsum dolor
+                 corporis ducimus maiores saepe porro praesentium, natus pariatur sed delectus neque odit dolorum aliquid maxime. 
+                 Tenetur fugiat explicabo dicta dolorem iusto, dolorum vitae commodi aperiam eaque sapiente quo tempora 
+                 veniam numquam nesciunt 
+                 voluptate repellendus. Incidunt distinctio  tempora</p>
+        </div>
+        <div class="socialmedia">
+            <a href="#"><i class="fa-brands fa-facebook"></i></a>
+            <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            <!-- <a href="#"><i class="fa-brands fa-linkedin"></i></a> -->
+            <a href="#"><i class="fa-brands fa-github"></i></a>
+        </div>
+    </div>
+</body>
+</html>
