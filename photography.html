@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            line-height: 1.6;
+            background-color: aliceblue;
+            color: #333;
+            text-align: center;
+            /* overflow: hidden; */
+        }
+        header{
+            background-color: #333;
+            color: #fff;
+            text-align: centeras;
+            padding: 20px;
+        }
+        header h1{
+            font-size: 1.5rem;
+            margin-bottom: 5px;
+        }
+        main{
+             margin-bottom: 20px;
+        }
+        
+        .gallery{
+            max-width: 1100px;
+            /* background-color: rgb(255, 255, 255); */
+            margin: 20px auto;
+            text-align: center;
+        }
+        .galarey-row{
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;}
+        .galarey-item{
+            width: 330px;
+            height: 200px;
+            background-color: #ffffff;
+            border-radius: 7px;
+             box-shadow: 0 10px 20px rgba(0, 0, 0, 0.25); 
+            overflow: hidden; 
+            margin-bottom: 10px;
+        }
+        .galarey-item img{
+            width: 100%;
+            height: 100%;
+            border-radius: 7px;
+            object-fit: cover;
+        }
+        footer{
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>photography portefolio</h1>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Delectus pariatur fugit,
+             soluta sint dolore quasi ad veritatis quia suscipit perspiciatis, eligendi tenetur. 
+             Dignissimos vero impedit, delectus illo esse exercitationem dolorem neque, maiores distinctio reprehenderit nemo! Nemo, 
+             doloremque voluptas. Minima ab a, eius nulla architecto autem id ullam blanditiis commodi voluptate vero non? Veniam odio,
+              sapiente facere odit, voluptas excepturi eveniet ducimus esse dolorum totam voluptatem quibusdam ea.
+               In voluptatibus ea mollitia et fugit quas nobis voluptate, expedita illum,
+             praesentium error voluptatum fuga voluptas, dignissimos hic quibusdam omnis neque! Voluptates.</p>
+    </header>
+    <main>
+        <section class="gallery">
+            <h2>nature</h2>
+            <div class="galarey-row">
+                <div class="galarey-item">
+                <img src="https://images.pexels.com/photos/635017/pexels-photo-635017.jpeg" alt="">
+                </div>
+                <div class="galarey-item">
+                <img src="https://images.pexels.com/photos/36496429/pexels-photo-36496429.png" alt="">
+                </div>
+                <div class="galarey-item">
+                <img src="https://images.pexels.com/photos/35876214/pexels-photo-35876214.png" alt="">
+                </div>
+            </div>
+        </section>
+        <section class="gallery">
+            <h2>college</h2>
+            <div class="galarey-row">
+                <div class="galarey-item">
+                <img src="https://images.pexels.com/photos/6147166/pexels-photo-6147166.jpeg" alt="">
+                </div>
+                <div class="galarey-item">
+                <img src="https://images.pexels.com/photos/7683629/pexels-photo-7683629.jpeg" alt="">
+                </div>
+                <div class="galarey-item">
+                <img src="https://images.pexels.com/photos/9178791/pexels-photo-9178791.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=189&fit=crop&h=306" alt="">
+                </div>
+            </div>
+        </section>
+        <section class="gallery">
+            <h2>sporting</h2>
+            <div class="galarey-row">
+                <div class="galarey-item">
+                <img src="https://images.pexels.com/photos/36618476/pexels-photo-36618476.jpeg" alt="">
+                </div>
+                <div class="galarey-item">
+                <img src="https://images.pexels.com/photos/3679440/pexels-photo-3679440.jpeg" alt="">
+                </div>
+                <div class="galarey-item">
+                <img src="https://images.pexels.com/photos/3693105/pexels-photo-3693105.jpeg" alt="">
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+    <p>&copy;2026 welcome to photo</p>
+    </footer>
+</body>
+</html>

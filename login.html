@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            /* background: linear-gradient(120deg,blue,green); */
+            /* Waxaan isticmaalnay radial-gradient si aan u abuurno laba gooboood oo geesaha ah */
+    /* background: 
+        radial-gradient(circle at top left, blue, transparent 70%),
+        radial-gradient(circle at bottom right, green, transparent 70%);
+    background-color: #1a1a1a; */
+    background-color: #00031e;
+    /* color: #fff; */
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .container{
+            width: 350px;
+            /* height: 300px; */
+            background-color: rgb(42, 39, 39);
+            box-shadow: 0 4px 6px rgba(0,0,0,0.6);
+            border-radius: 7px;
+            padding: 30px;
+        }
+        .container h2{
+            text-align: center;
+            color: #fff;
+            /* margin-bottom: 4px; */
+            /* padding: 5px; */
+        }
+        .input-group{
+            margin-bottom: 5px;
+            /* padding: 5px; */
+        }
+        .input-group label{
+            display: block;
+            color: rgb(181, 174, 166);
+            /* margin-bottom: 5px; */
+            padding: 10px;
+        }
+        .input-group input{
+            width: 100%;
+            padding: 10px;
+            border-radius: 6px;
+            background-color: rgb(45, 40, 40);
+            color: #fff;
+            /* background-color: rgb(143, 195, 195); */
+            outline: none;
+            border: 3px solid brown transparent;
+            padding: 10px;
+        }
+        .input-group input:hover{
+            border-color: rgb(238, 238, 1);
+        }
+        button{
+            padding: 10px;
+            
+        }
+        .btn {
+            background-color: rgb(1, 14, 198);
+            width: 100%;
+            color: #fff;
+            padding: 10px;
+            font-weight: bold;
+            border-radius: 6px;
+            margin-bottom: 3px;
+        }
+        .social-btns{
+            display: flex;
+            /* justify-content: center; */
+            gap: 10px;
+        }
+        .social-btns .google-btns{
+            width: 190px;
+            background-color: rgb(255, 0, 0);
+            color: #fff;
+            border-radius: px;
+            padding: 10px;
+        }
+        .social-btns .facebook-btns{
+            width: 190px;
+            background-color: rgb(23, 2, 182);
+            color: #fff;
+            border-radius: 6px;
+            padding: 10px;
+        }
+        .footer-text{
+            text-align: center;
+            margin-top: 10px;
+            font-size: 1.1rem;
+            color: rgb(102, 99, 96);
+        }
+        .footer-text a{
+            color: rgb(241, 186, 6);
+            text-decoration: none;
+        }
+        .background-circle{
+            position: absolute;
+            width: 300px;
+            height: 300px;
+            background-color: rgb(236, 0, 0);
+            top: -100px;
+            left: -100px;
+            z-index: 0;
+            border-radius: 50%;
+            filter: blur(120px);
+        }
+        .background-circle:nth-child(2){
+        right: -100px;
+        bottom: -100px;
+        left: auto;
+        top: auto;
+        background-color: rgb(3, 3, 209);
+        }
+    </style>
+</head>
+<body>
+    <div class="background-circle"></div>
+    <div class="background-circle"></div>
+    <div class="container">
+        <h2>Login</h2>
+                <form action="#">
+            <div class="input-group">
+                <label for="username">Username</label>
+                <input type="text" id="username" placeholder="Enter your name" required>
+            </div>
+            <div class="input-group">
+                <label for="password">Password</label>
+                <input type="password" id="password" placeholder="Enter your password" required>
+            </div>
+            
+            <button type="submit" class="btn" >login</button>
+            
+            <div class="social-btns">
+                <button type="button" class="google-btns">Google</button>
+                <button type="button" class="facebook-btns">Facebook</button>
+            </div>
+
+            <div class="footer-text">
+                Don't have an account? <a href="#">Sign Up</a>
+            </div>
+        </form>
+    </div>
+</body>
+</html>

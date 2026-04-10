@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+          font-family: Arial, Helvetica, sans-serif;
+          margin: 0;
+          padding: 0;
+          background-color: aliceblue;
+          color: #333;
+        
+        }
+       /* hero */
+       .hero{
+        background: url("https://images.pexels.com/photos/7130536/pexels-photo-7130536.jpeg");
+        height: 70vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        color: white;
+       }
+       .hero h1{
+        font-size: 2.5rem;
+       }
+       .hero p{
+        font-size: 1rem;
+       }
+    /* navbar */
+   .navbar{
+    background-color: #333;
+    padding: 10px 0;
+   }
+   .navbar ul{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    /* gap: 20px; */
+   } 
+   .navbar ul li{
+     margin: 0 20px;
+   }
+   .navbar ul li a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 1rem;
+   }
+   .navbar ul li a:hover{
+    text-decoration: underline;
+   }
+   /* main-contacts */
+   .main-content{
+    max-width: 80%;
+    margin: 0 auto;
+    text-align: center;
+    align-items: center;
+    overflow-x: hidden;
+    /* margin: 20px 0; */
+
+   }
+   .gallery{
+    margin: 30px auto;
+    text-align: center;
+   }
+   .gallery h2{
+    text-align: center;
+    margin-bottom: 20px;
+   }
+ .gallery-grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(200px,1fr));
+    /* grid-template-columns: 300px 300px; */
+    gap: 25px;
+    justify-content: center;
+    
+   }
+   .gallery .gallery-grid .gallery-item{
+    position: relative;
+    /* overflow: hidden; */
+    transition:transform 0.3s ease-in ;
+    
+   
+    
+    border-radius: 7px;
+    box-shadow: 0,4px 6px rgba(0,0,0,0.6);
+   }
+   .gallery .gallery-grid .gallery-item img{
+    width: 100%;
+    /* height: 100%; */
+   }
+
+.gallery .gallery-grid .gallery-item:hover{
+    transform: scale(1.1);
+}
+/* .gallery .gallery-grid .gallery-item ,.overley{
+    position: absolute; */
+    /* top: 0;
+    left: 0; */
+.overley{
+  position: absolute;
+  /* background-color: red; */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  /* background-color: rgb(147, 143, 143); */
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* text-align: center; */
+  transition: opacity 0.3s ease-in;
+  opacity: 0;
+}
+.overley:hover{
+    opacity: 1;
+}
+
+/* 
+   @media screen and (max-width:767px){
+    .gallery-grid{
+        grid-template-columns: repeat(1,1fr);
+    }
+   } */
+
+      /* blog */
+
+#blog{
+    padding: 5px 10px;
+    margin: 0 auto;
+    text-align: center;
+
+}
+#blog h2{
+    font-size: 2.2rem;
+}
+
+.blog-container{
+    display: grid;
+     grid-template-columns: repeat(auto-fit,minmax(200px,1fr));
+    /* grid-template-columns: 300px 300px; */
+    gap: 25px;
+    justify-content: center;
+    
+}
+  .blog-container article{
+    background-color: antiquewhite;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.6);
+  }
+  .blog-container article img{
+  width: 100%;
+  height: 70%;
+  object-fit: cover;
+  }
+  footer{
+    background-color: #333;
+    text-align: center;
+    padding: 20px;
+    color: #fff;
+    margin-top: 20px;
+  }
+
+    </style>
+</head>
+<body>
+    <!-- header -->
+     <header class="hero">
+        <div class="content">
+            <h1>welcome to my style</h1>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Animi voluptates voluptatem aliquid impedit delectus, 
+                ipsam rerum quae quia sit qui est labore illo quidem explicabo optio, suscipit id obcaecati incidunt pariatur, 
+                consequuntur aliquam laudantium? Ab ullam quaerat autem eius fuga? Magnam,
+                ipsam rerum quae quia sit qui est labore illo quidem explicabo optio, suscipit id obcaecati incidunt pariatur, 
+                consequuntur aliquam laudantium? Ab ullam quaerat autem eius fuga? Magnam,
+                veritatis porro labore aliquid rerum asperiores repellendus mollitia! Odit.</p>
+        </div>
+
+     </header>
+     <!-- navbar -->
+     <nav class="navbar">
+      <ul>
+        <li><a href="#mygallarey">gallarey</a></li>
+        <li><a href="#journey">journey</a></li>
+        <li><a href="#blog">blog</a></li>
+      </ul>
+     </nav>
+     <!-- main-content -->
+      <main class="main-content">
+
+       <!-- gallarey section -->
+        <section class="gallery" id="mygallarey">
+        <h2>gallery</h2>
+        <div class="gallery-grid">
+            <div class="gallery-item">
+                <img src="https://images.pexels.com/photos/2048434/pexels-photo-2048434.jpeg" alt="">
+                <div class="overley">my new style</div>
+            </div>
+            <div class="gallery-item">
+                <img src="https://images.pexels.com/photos/157675/fashion-men-s-individuality-black-and-white-157675.jpeg" alt="">
+                <div class="overley">In Mogadisho</div>
+            </div>
+            <div class="gallery-item">
+                <img src="https://images.pexels.com/photos/2216607/pexels-photo-2216607.jpeg" alt="">
+                <div class="overley">in hargeysa</div>
+            </div>
+            <div class="gallery-item">
+                <img src="https://images.pexels.com/photos/1043473/pexels-photo-1043473.jpeg" alt="">
+                <div class="overley">in bosaaso</div>
+            </div>
+            <div class="gallery-item">
+                <img src="https://images.pexels.com/photos/1516680/pexels-photo-1516680.jpeg" alt="">
+                <div class="overley">in hargeysa</div>
+            </div>
+            <div class="gallery-item">
+                <img src="https://images.pexels.com/photos/1321943/pexels-photo-1321943.jpeg" alt="">
+                <div class="overley">in hargeysa</div>
+            </div>
+        </div>
+        </section>
+
+        <!-- journey -->
+        <section class="gallery" id="journey">
+        <h2>journey</h2>
+        <div class="gallery-grid">
+            <div class="gallery-item">
+                <img src="https://images.pexels.com/photos/1178784/pexels-photo-1178784.jpeg" alt="">
+                <div class="overley">my new style</div>
+            </div>
+            <div class="gallery-item">
+                <img src="https://images.pexels.com/photos/887828/pexels-photo-887828.jpeg" alt="">
+                <div class="overley">In Mogadisho</div>
+            </div>
+            <div class="gallery-item">
+                <img src="https://images.pexels.com/photos/372098/pexels-photo-372098.jpeg" alt="">
+                <div class="overley">in hargeysa</div>
+            </div>
+            <div class="gallery-item">
+                <img src="https://images.pexels.com/photos/1251861/pexels-photo-1251861.jpeg" alt="">
+                <div class="overley">in bosaaso</div>
+            </div>
+            <div class="gallery-item">
+                <img src="https://images.pexels.com/photos/1076081/pexels-photo-1076081.jpeg" alt="">
+                <div class="overley">in hargeysa</div>
+            </div>
+            <div class="gallery-item">
+                <img src="https://images.pexels.com/photos/115603/pexels-photo-115603.jpeg" alt="">
+                <div class="overley">in hargeysa</div>
+            </div>
+        </div>
+        </section>
+        <!-- blog -->
+         <section class="blog-section" id="blog">
+         <h2>blog</h2>
+         <div class="blog-container">
+            <article>
+                 <img src="https://images.pexels.com/photos/265667/pexels-photo-265667.jpeg" alt="">
+                 <h2>style tipes</h2>
+            </article>
+            <article>
+                 <img src="https://images.pexels.com/photos/261662/pexels-photo-261662.jpeg" alt="">
+                 <h2>style tipes</h2>
+            </article>
+            <article>
+                 <img src="https://images.pexels.com/photos/3584969/pexels-photo-3584969.jpeg" alt="">
+                 <h2>style tipes</h2>
+            </article>
+            <article>
+                 <img src="https://images.pexels.com/photos/4240505/pexels-photo-4240505.jpeg" alt="">
+                 <h2>style tipes</h2>
+            </article>
+            <article>
+                 <img src="https://images.pexels.com/photos/2657669/pexels-photo-2657669.jpeg" alt="">
+                 <h2>style tipes</h2>
+            </article>
+         </div>
+         </section>
+      </main>
+      <footer>
+        <p>&copy;2026 welcome my personal-style</p>
+      </footer>
+</body>
+</html>
