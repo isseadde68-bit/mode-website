@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>simle todolist</title>
+    <style>
+        body{
+            max-width: 600px;
+            margin: 20px auto;
+            background-color: rgb(255, 254, 252);
+        }
+        /* .taskform{
+            display: flex;
+            margin-bottom: 10px;
+        }
+        #input{
+            padding: 10px;
+        } */
+
+    </style>
+</head>
+<body>
+    <h1>My task list</h1>
+    <form action="" id="taskform">
+     <input type="text" id="input" placeholder="add a new ..task" required>
+     <button type="submit">add</button>
+    </form>
+    <ul id="tasklist">
+
+    </ul>
+
+
+    <script>
+
+
+
+        const form= document.getElementById("taskform")
+        const input= document.getElementById("input")
+        const list= document.getElementById("tasklist")
+
+
+     form.addEventListener("submit",function(e){
+        e.preventDefault();
+       addtask(input.value)
+
+       input.value=''
+     })
+      
+
+     function addtask(text){
+        const li =document.createElement("li")
+        li.innerHTML=`<span> ${text} </span> <button class="dalateb"> x  </button>           `;
+        tasklist.appendChild(li);
+
+
+        li.querySelector(".dalateb").addEventListener("click",function(){
+            li.remove();
+        })
+     }
+    
+
+    </script>
+</body>
+</html>
